@@ -39,6 +39,10 @@ form label {
     display: inline-block;
 }
 
+form div {
+    margin-top: 16px;
+}
+
 canvas {
     border: solid 1px #9ab;
     margin: 20px auto;
@@ -54,6 +58,12 @@ button[type="submit"] {
     border-radius: 4px;
     text-decoration: none;
     border: none;
+    cursor: pointer;
+}
+
+button.demo {
+    background: rgb(68, 85, 102);
+    color: white;
 }
 
 a.download.disabled {

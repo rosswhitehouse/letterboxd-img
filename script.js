@@ -62,4 +62,12 @@ function updateCanvas(event) {
     }
 }
 
-document.querySelector('button[type="submit"]').addEventListener('click', updateCanvas)
+function prefillCanvas(event) {
+    event.preventDefault()
+    document.getElementById('name').value = 'Spirited Away'
+    document.getElementById('rating').value = 4
+    document.getElementById('img').value = 'https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpgmazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg'
+}
+
+document.querySelector('button.generate').addEventListener('click', updateCanvas)
+document.querySelector('button.demo').addEventListener('click', prefillCanvas)
