@@ -41,6 +41,7 @@ canvas {
 }
 
 a.download,
+a.button,
 button[type="submit"] {
     padding: 8px 16px;
     background: rgba(5,172,31,1);
@@ -55,4 +56,9 @@ a.download.disabled {
     background: DimGrey;
     color: white;
     cursor: not-allowed;
+}
+
+a.button.code {
+    margin: 24px auto;
+    display: inline-block;
 }
