@@ -62,3 +62,7 @@ a.button.code {
     margin: 24px auto;
     display: inline-block;
 }
+
+footer {
+    text-align: center;
+}
