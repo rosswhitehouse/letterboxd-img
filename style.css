@@ -23,6 +23,10 @@ body {
     text-align: center;
 }
 
+.canvas {
+    min-width: 310px;
+}
+
 h1 {
     margin-bottom: 16px;
 }
