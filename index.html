@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letterbox'd Image Generator</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="form">
+            <h1>Letterboxd Social Sharer</h1>
+            <p>Ever shared a Letterboxd review on Instagram Stories? The app makes an image and shares it.<br />How does that happen? I made one to find out:</p>
+            <form action="#">
+                <!-- Film -->
+                <label>
+                    Film Name:
+                    <input name="name" id="name" type="text">
+                </label>
+                <!-- Rating -->
+                <label>
+                    Stars:
+                    <select name="rating" id="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <!-- image -->
+                <label>
+                    Film img src:
+                    <input name="img" id="img" type="text">
+                </label>
+                <button type="submit" method="#">Generate</button>
+            </form>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas" width="300" height="486"></canvas>
+            <a href="" class="disabled download">Download</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

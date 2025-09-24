@@ -1,0 +1,58 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background: #2c3440;
+    color: white;
+    padding: 32px;
+}
+
+.card {
+    background: #456;
+    border-radius: 10px;
+    padding: 32px;
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+.card .canvas {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+form {
+    margin: 16px 0;
+}
+
+form label {
+    display: inline-block;
+}
+
+canvas {
+    border: solid 1px #9ab;
+    margin: 20px auto;
+}
+
+a.download,
+button[type="submit"] {
+    padding: 8px 16px;
+    background: rgba(5,172,31,1);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+}
+
+a.download.disabled {
+    background: DimGrey;
+    color: white;
+    cursor: not-allowed;
+}
