@@ -10,4 +10,6 @@ Canvas - as it turns out - is a pain. You define the height and width of the can
 
 The trickiest part was that text is rendered across the element, with no idea of the boundaries of the canvas, so if your movie title in our case is too long, it doesn't wrap, but overflows. To fix this, I turned the title string into an array broken on spaces, then looped each word, and only added the word to the line if the line's total length wouldn't be more than 35 characters. If it would be more than 35 characters, I completed the previous line, and made a new line for the new word. It's not ideal, but it seems to work alright. However, having more lines means the stars need to dynamically move down. And having the stars move down means the height of the canvas needs to be greater also, so there's some maths and guesswork involved in getting that to happen.
 
+Big thanks to [Chen Mualem's Meme Generator](https://github.com/chenmu10/memeGenerator) for inspiring the toy.
+
 [See the app on Github Pages](https://rosswhitehouse.github.io/letterboxd-img/index.html).
